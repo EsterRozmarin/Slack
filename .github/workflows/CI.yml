@@ -19,14 +19,15 @@ jobs:
 
       - name: Install dependencies
         run: |
+          cd slack
           python -m pip install --upgrade pip
-          pip install -r slack/requirements.txt
+          pip install -r requirements.txt
 
       - name: Run tests
         env:
           SLACK_BOT_TOKEN: fake-token
           BASE_URL: https://slack.com/api
           PYTHONPATH: src
-
         run: |
+          cd slack
           pytest -v
