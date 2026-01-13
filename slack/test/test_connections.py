@@ -2,7 +2,7 @@ import pytest
 from unittest.mock import patch, Mock
 from src.slack.connections import build_connection_list
 
-@patch("slack.sync.SlackClient")
+@patch("src.slack.connections.SlackClient")
 def test_build_connection_list(mock_client_class):
     mock_client = Mock()
     mock_client.get.side_effect = [
