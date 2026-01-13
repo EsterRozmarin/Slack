@@ -1,0 +1,5 @@
+services:
+  slack-sync:
+    build: .
+    environment:
+      SLACK_BOT_TOKEN: ${SLACK_BOT_TOKEN}
