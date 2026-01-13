@@ -14,7 +14,8 @@ def test_slack_client_get_success():
         mock_get.assert_called_once_with(
             f"{client.base_url}/users.list",
             headers=client.headers,
-            params=None
+            params=None,
+            timeout=10
         )
 
 def test_slack_client_get_http_error():
