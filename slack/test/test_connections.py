@@ -1,6 +1,6 @@
 import pytest
 from unittest.mock import patch, Mock
-from slack.sync import build_connection_list
+from src.slack.connections import build_connection_list
 
 @patch("slack.sync.SlackClient")
 def test_build_connection_list(mock_client_class):

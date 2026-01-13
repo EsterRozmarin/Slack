@@ -1,6 +1,6 @@
 import pytest
 from unittest.mock import patch, Mock
-from slack.client import SlackClient
+from src.slack.client import SlackClient
 
 def test_slack_client_get_success():
     with patch("slack.client.requests.get") as mock_get:
