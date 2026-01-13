@@ -26,5 +26,7 @@ jobs:
         env:
           SLACK_BOT_TOKEN: fake-token
           BASE_URL: https://slack.com/api
+          PYTHONPATH: src
+
         run: |
-          pytest slack/test -v
+          pytest -v
