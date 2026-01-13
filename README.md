@@ -1,0 +1,2 @@
+# Slack
+slack-connection-service
