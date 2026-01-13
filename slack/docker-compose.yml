@@ -3,3 +3,5 @@ services:
     build: .
     environment:
       SLACK_BOT_TOKEN: ${SLACK_BOT_TOKEN}
+      PYTHONPATH: /app/src
+

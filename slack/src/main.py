@@ -1,4 +1,4 @@
-from slack.sync import build_connection_list
+from slack.connections import build_connection_list
 from config import SLACK_BOT_TOKEN
 
 if __name__ == "__main__":

@@ -10,6 +10,4 @@ COPY . .
 
 ENV PYTHONUNBUFFERED=1
 
-ENV PYTHONPATH=/app/src
-
 CMD ["python", "src/main.py"]

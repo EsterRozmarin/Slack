@@ -15,7 +15,8 @@ class SlackClient:
         r = requests.get(
             f"{self.base_url}/{endpoint}",
             headers=self.headers,
-            params=params
+            params=params,
+            timeout=10
         )
         r.raise_for_status()
         return r.json()
